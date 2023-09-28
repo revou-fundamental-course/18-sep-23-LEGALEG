@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid #5c3838;
+  padding: 0 3rem;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+#replace-name {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+
+nav {
+  display: flex   ;
+}
+
+nav div {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #5c3838;
+}
+
+ nav div:hover {
+  background-color: #4b3131;
+  
+}
+
+nav div a:hover {
+  color: #fff;
+}
+
+.title {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.title h2 {
+  color: #5c3838;
+}
+
+.title p {
+  color: #796464;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-left {
+  text-align: center;
+  align-items: center;
+  background-color: #796464;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.content-left div.image img {
+  width: 40rem;
+  height: 24rem;
+  margin-bottom: 1rem;
+}
+
+.content-left .user-card {
+  display: flex;
+  justify-content: left;
+  margin: 5rem 0 10rem;
+  margin-left: 10rem;
+}
+
+.content-left .user-card .icon,
+.benefit-card .icon {
+  width: 2rem;
+  background-color: #796464;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #fff;
+}
+
+
+.content-left .user-card .user-name,
+.benefit-card .description-benefit {
+  line-height: 0.2rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.benefit {
+  display: inline-block;
+  max-width: 25rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.content-left .benefit-card {
+  display: flex;
+  justify-content: left;
+  margin: 2rem 0;
+  padding: 0;
+  background-color: #dab9b9;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.content-right {
+  background-color: #dab9b9;
+  padding: 1rem 1rem 3rem;
+  color: #4b3131;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 40rem;
+  /* max-width: 20rem; */
+
+  /* display: block; */
+}
+
+.content-right .title-form {
+  margin-bottom: 6rem;
+}
+
+.content-right form {
+  padding-left: 2rem;
+}
+
+.content-right form p {
+  color: red;
+}
+
+.content-right div {
+  margin-bottom: 2rem;
+}
+
+.content-right form .input-data {
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid #8f6b6b;
+  color: #8f6b6b;
+}
+
+.content-right form #select {
+  width: 90%;
+  cursor: pointer;
+}
+
+.content-right form button {
+  padding: 1rem;
+  width: 90%;
+  background-color: #5c3838;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  background-color: #796464;
+  line-height: 5rem;
+}
+
+
+@media (max-width: 1336px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 882px) {
+  .content-right {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .nav2 {
+    display: none;
+  }
+
+
+  .nav1 div {
+    display: block;
+    display: none;
+    padding: 0.5rem;
+  }
+  
+  .nav div a {
+    text-decoration: none;
+    color: black;
+  }
+
+  
+
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* @media only screen and (max-width: 600px) {
+  .main
+} 

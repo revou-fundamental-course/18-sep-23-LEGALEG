@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="Home">
+    <header>
+      <div class="logo">
+        <h1>E-Groceries</h1>
+      </div>
+
+      <div class="nav1">
+        <button id="replace-name">ReplaceName</button>
+      </div>
+      <nav>
+        <div><a href="#home">Home</a></div>
+        <div><a href="#our-package">Our Package</a></div>
+        <div><a href="#contact-us">Call Us</a></div>
+      </nav>
+    </header>
+
+    <section class="title">
+      <h1>Hi <span id="name">there</span>! Welcome to my Web</h1>
+      <h1>Adika's E-Groceries</h1>
+      <p>Every day with best ingredient</p>
+    </section>
+
+    <main>
+      <section id="our-package" class="content-left">
+        <div class="image">
+          <img src="asset/buah-sayur_1.jpg" class="slideshow" alt="" />
+          <img src="asset/buah-sayur_2.jpg" class="slideshow" alt="" />
+          <img src="asset/buah-sayur_3.jpg" class="slideshow" alt="" />
+          <button onclick="plusDivs(-1)">previous</button>
+          <button onclick="plusDivs(1)">next</button>
+        </div>
+        <p>"setiap hari beli sayur buah yang fresh di sini."</p>
+        <div class="user-card">
+          <div class="icon">
+            <i data-feather="user"></i>
+          </div>
+          <div class="user-name">
+            <h4>Florance Hughes</h4>
+            <span>Ibu Rumah Tangga, 28</span>
+          </div>
+        </div>
+        <h2 class="benefit">Benefits of using our services</h2>
+        <div class="benefit-card">
+          <div class="icon">
+            <i data-feather="user"></i>
+          </div>
+          <div class="description-benefit">
+            <h4>EFISIEN</h4>
+            <span
+              >Dengan menggunakan layanan kami, anda hanya perlu memesan
+              melewati handpone
+            </span>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="icon">
+            <i data-feather="user"></i>
+          </div>
+          <div class="description-benefit">
+            <h4>Mudah</h4>
+            <span>Sangat sangat sangat Mudah</span>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="icon">
+            <i data-feather="user"></i>
+          </div>
+          <div class="description-benefit">
+            <h4>BANYAK PROMO BUND</h4>
+            <span
+              >Bagi Ibu ibu yang suka mencari promo promo gokil, Layanan Kami
+              adalah juara</span
+            >
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="content-right">
+        <div class="title-form">
+          <h2>Contact Us</h2>
+          <p>Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</p>
+        </div>
+        <form name="contact-form" action="">
+          <div>
+            <label for="name">Your Name</label> <br />
+            <input
+              id="your-name"
+              type="text"
+              name="your-name"
+              class="input-data"
+              placeholder="input your name"
+            />
+            <p id="name-error"></p>
+          </div>
+          <div>
+            <label for="email">Email Address</label> <br />
+            <input
+              type="email"
+              name="email"
+              class="input-data"
+              placeholder="example@email.com"
+            />
+            <p id="email-error"></p>
+          </div>
+          <div>
+            <label for="select">What are you interested in?</label> <br />
+            <select name="select" id="select" class="input-data">
+              <option class="input-data" value="tidak ada">--Select--</option>
+              <option class="input-data" value="Wortel">Wortel</option>
+              <option class="input-data" value="Kubis">Kubis</option>
+              <option class="input-data" value="Bayam">Bayam</option>
+              <option class="input-data" value="Tomat">Tomat</option>
+            </select>
+            <p id="select-error"></p>
+          </div>
+          <button id="btn">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Created By Adika Rafif</h3>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
